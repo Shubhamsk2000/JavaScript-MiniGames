@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .gameContent {
+            margin: 0.5rem;
+            width: 25rem;
+            border: 2px solid black;
+            border-radius: 23px;
+            padding: 1rem;
+            box-shadow: 0px 0px 25px 0px rgb(43, 37, 37);
+            background-image: linear-gradient(to top right, rgb(45, 144, 216),rgb(187, 211, 224));
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        .buttons button {
+            margin: 0.3rem;
+            padding: .5rem 1rem;
+            background: none;
+            border-radius: 15px;
+            transition: scale 0.2s ease-in;
+            font-size: 1.3rem;
+        }
+
+        .buttons button:hover {
+            scale: 1.1;
+        }
+
+        .buttons button:active {
+            scale: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="gameContent">
+        <h1>Computer Choice : <span id="computerChoice"></span></h1>
+        <h1>Your Choice : <span id="yourChoice"></span></h1>
+        <h1>Result : <span id="result"></span></h1>
+        <div class="buttons">
+            <button id="Rock">Rock</button>
+            <button id="Scissors">Scissors</button>
+            <button id="Paper">Paper</button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
